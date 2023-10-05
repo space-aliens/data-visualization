@@ -31,12 +31,8 @@ def main():
     dice_values = range(3, max_value + 1)
 
     # Number of time values comes in rolled_data.
-    dice_values_data = []
-    
-    for value in dice_values:
+    dice_values_data = [rolled_data.count(value) for value in dice_values]
 
-        number_of_times = rolled_data.count(value) 
-        dice_values_data.append(number_of_times)
 
     labels = {'x':"Dice Values", 'y':"Dice Values Data"}
 
